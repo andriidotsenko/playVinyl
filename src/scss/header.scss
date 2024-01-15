@@ -11,44 +11,78 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-height: rem(62);
+		min-height: rem(90);
+		@include adaptiveValue("min-height", 90, 51.6, 1, 1440, 0);
 	}
 
 	&__back-button {
-		color: white;
-		line-height: 0.96;
-		font-size: rem(18);
+		color: $accentSecondColor;
+		line-height: 1;
+		font-size: rem(24);
+		@include adaptiveValue("font-size", 24, 17.6, 1, 1440, 320);
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		padding-left: rem(30);
 		position: relative;
 
+
+		&:hover {
+			color: #6acae7;
+			transition: color 0.2s ease-in-out 0s;
+			cursor: pointer;
+
+		}
+
+		&:active {
+			color: #dfc2eb;
+
+		}
+
 		&::before {
-			line-height: 1.32;
-			font-size: 14px;
+			line-height: 1.4;
+			font-size: rem(18);
+			@include adaptiveValue("font-size", 18, 14, 1, 1440, 320);
 			position: absolute;
 			top: 0;
 			left: 27px;
 			transform: translateX(-14px);
-
 		}
 	}
 
 	&__actions {
-		color: white;
+		color: $accentSecondColor;
 		display: flex;
-		gap: rem(18);
+		font-size: rem(18);
+
+		@include adaptiveValue("gap", 26, 19.49);
 		line-height: 1.32;
-		font-size: 14px;
+		@include adaptiveValue("font-size", 18, 14, 1, 1440, 390);
+
+
+
 	}
 }
 
 .actions-header {
 
-	&__heart {}
+	&__action {
+		padding: 0 3px;
 
-	&__folder {}
+
+		&:hover {
+			color: #6acae7;
+			transition: color 0.2s ease-in-out 0s;
+			cursor: pointer;
+		}
+
+		&:active {
+			color: #dfc2eb;
+
+		}
+	}
+
+
 }
 
 
