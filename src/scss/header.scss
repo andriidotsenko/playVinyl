@@ -42,10 +42,10 @@
 		&::before {
 			line-height: 1.4;
 			font-size: rem(18);
-			@include adaptiveValue("font-size", 18, 14, 1, 1440, 320);
+			@include adaptiveValue("font-size", 14, 13.73, 1, 1440, 320);
 			position: absolute;
 			top: 0;
-			left: 27px;
+			left: rem(27);
 			transform: translateX(-14px);
 		}
 	}
@@ -57,7 +57,7 @@
 
 		@include adaptiveValue("gap", 26, 19.49);
 		line-height: 1.32;
-		@include adaptiveValue("font-size", 18, 14, 1, 1440, 390);
+		@include adaptiveValue("font-size", 18, 13.73, 1, 1440, 320);
 
 
 
