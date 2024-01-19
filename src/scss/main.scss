@@ -146,4 +146,68 @@
 	}
 }
 
-option {}
+
+.output {
+	margin-top: 12px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: rem(12);
+
+	&__card {}
+}
+
+.card {
+	position: relative;
+
+	&__img {
+		width: rem(169);
+
+		height: rem(169);
+		border-radius: rem(8);
+		overflow: hidden;
+	}
+
+	&__like {
+
+		background: $backgroundMainColor;
+		border-radius: rem(4);
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: rem(10);
+		left: rem(10);
+
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 3;
+			color: $accentColor;
+		}
+	}
+
+
+	&__title {}
+
+	&__name {}
+
+	&__year-folder {}
+
+	&__year-title {}
+
+	&__style-folder {}
+
+	&__style-title {}
+
+	&__style-value {}
+
+	&__country-folder {}
+
+	&__country-title {}
+
+	&__country-value {}
+
+	&__add-button {}
+}
