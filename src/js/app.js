@@ -228,3 +228,187 @@ import * as flsScroll from "./files/scroll/scroll.js";
 /* Підключаємо файли зі своїм кодом */
 import "./files/script.js";
 //============================================================================================================================================================================================================================================
+
+// const albumCollection = [
+// 	{
+// 		id: 1,
+// 		imgSrc: 1,
+// 		title: "Let There Be Rock",
+// 		artist: "AC/DC",
+// 		year: 1990,
+// 		style: "Punk, Dub, Funk",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 2,
+// 		imgSrc: 2,
+// 		title: "Dark Side of the Moon",
+// 		artist: "Pink Floyd",
+// 		year: 1973,
+// 		style: "Progressive Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 3,
+// 		imgSrc: 3,
+// 		title: "Thriller",
+// 		artist: "Michael Jackson",
+// 		year: 1982,
+// 		style: "Pop, R&B",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 4,
+// 		imgSrc: 4,
+// 		title: "Back in Black",
+// 		artist: "AC/DC",
+// 		year: 1980,
+// 		style: "Hard Rock",
+// 		country: "Australia"
+// 	},
+// 	{
+// 		id: 5,
+// 		imgSrc: 5,
+// 		title: "Abbey Road",
+// 		artist: "The Beatles",
+// 		year: 1969,
+// 		style: "Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 6,
+// 		imgSrc: 6,
+// 		title: "Hotel California",
+// 		artist: "Eagles",
+// 		year: 1976,
+// 		style: "Rock",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 7,
+// 		imgSrc: 7,
+// 		title: "The Wall",
+// 		artist: "Pink Floyd",
+// 		year: 1979,
+// 		style: "Progressive Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 8,
+// 		imgSrc: 8,
+// 		title: "Back to Black",
+// 		artist: "Amy Winehouse",
+// 		year: 2006,
+// 		style: "Soul, R&B",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 9,
+// 		imgSrc: 9,
+// 		title: "Rumours",
+// 		artist: "Fleetwood Mac",
+// 		year: 1977,
+// 		style: "Rock, Pop",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 10,
+// 		imgSrc: 10,
+// 		title: "The Dark Side of the Moon",
+// 		artist: "Pink Floyd",
+// 		year: 1973,
+// 		style: "Progressive Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 11,
+// 		imgSrc: 11,
+// 		title: "Led Zeppelin IV",
+// 		artist: "Led Zeppelin",
+// 		year: 1971,
+// 		style: "Hard Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 12,
+// 		imgSrc: 12,
+// 		title: "Sgt. Pepper's Lonely Hearts Club Band",
+// 		artist: "The Beatles",
+// 		year: 1967,
+// 		style: "Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 13,
+// 		imgSrc: 13,
+// 		title: "Born to Run",
+// 		artist: "Bruce Springsteen",
+// 		year: 1975,
+// 		style: "Rock",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 14,
+// 		imgSrc: 14,
+// 		title: "The Joshua Tree",
+// 		artist: "U2",
+// 		year: 1987,
+// 		style: "Rock",
+// 		country: "Ireland"
+// 	},
+// 	{
+// 		id: 15,
+// 		imgSrc: 15,
+// 		title: "A Night at the Opera",
+// 		artist: "Queen",
+// 		year: 1975,
+// 		style: "Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 16,
+// 		imgSrc: 16,
+// 		title: "Thriller",
+// 		artist: "Michael Jackson",
+// 		year: 1982,
+// 		style: "Pop, R&B",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 17,
+// 		imgSrc: 17,
+// 		title: "Wish You Were Here",
+// 		artist: "Pink Floyd",
+// 		year: 1975,
+// 		style: "Progressive Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 18,
+// 		imgSrc: 18,
+// 		title: "The White Album",
+// 		artist: "The Beatles",
+// 		year: 1968,
+// 		style: "Rock",
+// 		country: "United Kingdom"
+// 	},
+// 	{
+// 		id: 19,
+// 		imgSrc: 19,
+// 		title: "Bridge Over Troubled Water",
+// 		artist: "Simon & Garfunkel",
+// 		year: 1970,
+// 		style: "Folk Rock",
+// 		country: "USA"
+// 	},
+// 	{
+// 		id: 20,
+// 		imgSrc: 20,
+// 		title: "Court and Spark",
+// 		artist: "Joni Mitchell",
+// 		year: 1974,
+// 		style: "Folk Jazz, Pop Rock",
+// 		country: "Canada"
+// 	},
+// 	// Add more objects as needed
+// ];

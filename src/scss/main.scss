@@ -120,9 +120,10 @@
 	padding: rem(11);
 	border-radius: rem(4);
 	font-size: rem(16);
+	width: rem(350);
 
 	@media (min-width:$tablet) {
-		width: rem(300);
+		width: rem(350);
 	}
 
 }
@@ -148,23 +149,40 @@
 
 
 .output {
+
 	margin-top: 12px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: rem(12);
+	grid-template-columns: minmax(161px, 1fr) minmax(161px, 1fr);
+
+	gap: rem(2);
 
 	&__card {}
 }
 
 .card {
+	display: flex;
+	flex-direction: column;
+	padding: 0 rem(5);
+	word-wrap: break-word;
+
+	font-family: "Plus Jakarta Sans";
 	position: relative;
 
-	&__img {
-		width: rem(169);
+	&:not(:last-child) {
+		margin-bottom: rem(10);
+	}
 
-		height: rem(169);
+	&__img {
+		// width: rem(169);
+		width: 100%;
+		@include adaptiveValue("min-height", 260, 151);
+		@include adaptiveValue("min-width", 260, 151);
 		border-radius: rem(8);
 		overflow: hidden;
+
+		&:not(:last-child) {
+			margin-bottom: rem(8);
+		}
 	}
 
 	&__like {
@@ -189,25 +207,103 @@
 	}
 
 
-	&__title {}
+	&__title {
+		color: $accentColor;
+		width: 100%;
+		font-size: rem(14);
 
-	&__name {}
+		font-weight: 700;
+		line-height: 1;
 
-	&__year-folder {}
+		&:not(:last-child) {
+			margin-bottom: rem(3);
+		}
+	}
 
-	&__year-title {}
+	&__name {
+		color: $accentColor;
+		font-size: rem(14);
+		font-weight: 500;
+		line-height: 1;
 
-	&__style-folder {}
+		&:not(:last-child) {
+			margin-bottom: rem(7);
+		}
+	}
 
-	&__style-title {}
 
-	&__style-value {}
+	&__year-title {
+		color: #738286;
+		font-size: rem(14);
+		font-weight: 400;
+	}
 
-	&__country-folder {}
+	&__year-folder {
+		color: $accentColor;
+		font-size: rem(14);
+		font-weight: 400;
 
-	&__country-title {}
+		&:not(:last-child) {
+			margin-bottom: rem(3);
+		}
+	}
 
-	&__country-value {}
+	&__style-folder {
+		color: $accentColor;
+		font-size: rem(14);
+		font-weight: 400;
 
-	&__add-button {}
+		&:not(:last-child) {
+			margin-bottom: rem(3);
+		}
+	}
+
+	&__style-title {
+		color: #738286;
+		font-size: rem(14);
+		font-weight: 400;
+	}
+
+
+	&__country-folder {
+		flex: 1 1 auto;
+		color: $accentColor;
+		font-size: rem(14);
+		font-weight: 400;
+
+		&:not(:last-child) {
+			margin-bottom: rem(11);
+		}
+	}
+
+	&__country-title {
+		color: #738286;
+		font-size: rem(14);
+		font-weight: 400;
+	}
+
+
+
+	&__add-button {
+		min-height: rem(44);
+		border-radius: rem(4);
+		display: block;
+		width: 100%;
+		background: $accentColor;
+
+	}
+
+	&__add-button-text {
+		color: $accentSecondColor;
+		position: relative;
+
+		&::before {
+			font-size: rem(14);
+			top: 10%;
+			left: rem(35);
+			position: absolute;
+
+		}
+	}
+
 }
